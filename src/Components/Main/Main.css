@@ -1,0 +1,29 @@
+main {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.error {
+  color: red;
+}
+
+/* .movie {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  margin-top: 80px;
+} */
+
+.movie p {
+  margin-top: 15px;
+}
+
+.movie h2 {
+  justify-content: center;
+}

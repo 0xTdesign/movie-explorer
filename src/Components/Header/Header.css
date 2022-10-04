@@ -1,0 +1,23 @@
+.header-container {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list ul {
+  display: flex;
+}
+
+.nav-list a {
+  margin: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+header {
+  margin-top: 10px;
+  margin-bottom: 120px;
+}
