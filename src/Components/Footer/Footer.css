@@ -5,7 +5,7 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-  color: wheat;
+  color: #fff;
 }
 
 .footer-container {
@@ -26,4 +26,8 @@ footer img {
   left: -79px;
   height: 100vh;
   width: auto;
+}
+
+span {
+  z-index: 90;
 }
