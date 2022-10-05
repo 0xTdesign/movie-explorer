@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import { useState } from "react";
 
 function App() {
+  const [review, setreview] = useState("");
   const [showerror, setshowerror] = useState(false);
   const [movies, setmovies] = useState([]);
   const [form, setform] = useState({
@@ -30,11 +31,18 @@ function App() {
       tempMovies.unshift(res.data); // Unshift add to the start of the array
 
       console.log(res.data);
+
       if (tempMovies.length > 3) {
         tempMovies.pop(); // Removing the first one to allow for a new movie.
       }
       setshowerror(false);
       setmovies(tempMovies);
+      //check if movie is in Favourites
+      const API2 = `http://localhost:8080/favourites?title=${res.data.Title}`;
+      const res2 = await axios.get(API2);
+      console.log(res2);
+      setreview(res2.data.Review);
+      console.log(res2.data.Review);
     } else {
       setshowerror(true);
     }
@@ -43,7 +51,7 @@ function App() {
   return (
     <div className="App">
       <Header handleChange={handleChange} getMovie={getMovie} />
-      <Main movies={movies} showerror={showerror} />
+      <Main movies={movies} showerror={showerror} review={review} />
       <Footer />
     </div>
   );

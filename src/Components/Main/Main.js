@@ -1,13 +1,14 @@
 import React from "react";
 import "./Main.css";
 
-export default function Main({ handleChange, getMovie, movies, showerror }) {
+export default function Main({ movies, showerror, review }) {
   return (
-    <main className="Main">
+    <main className="main">
       {/* <form onSubmit={getMovie}>
         <input onChange={handleChange} name="title" placeholder="Name of Movie" type="text" />
         <button type="submit">Explore</button>
       </form> */}
+      {review && <p>Yay! That is one of my favourite movie as well.</p>}
       {showerror && <p className="error">That is not a valid moive title</p>}
       {movies.map((movie, index) => {
         return (

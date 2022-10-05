@@ -47,3 +47,19 @@ form {
   text-align: center;
   margin: 8px;
 }
+
+@media only screen and (min-width: 1000px) {
+  .img-container {
+    width: 50%;
+  }
+
+  main {
+    position: absolute;
+    left: 300px;
+    margin: 0;
+  }
+
+  .movie-container {
+    flex-direction: row;
+  }
+}
