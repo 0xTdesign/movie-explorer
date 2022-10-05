@@ -28,6 +28,8 @@ function App() {
     if (res.data.Error !== "Movie not found!") {
       const tempMovies = [...movies]; // copy of movies state variable becasuse state cant be mutated.
       tempMovies.unshift(res.data); // Unshift add to the start of the array
+
+      console.log(res.data);
       if (tempMovies.length > 3) {
         tempMovies.pop(); // Removing the first one to allow for a new movie.
       }
@@ -40,8 +42,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Main handleChange={handleChange} getMovie={getMovie} movies={movies} showerror={showerror} />
+      <Header handleChange={handleChange} getMovie={getMovie} />
+      <Main movies={movies} showerror={showerror} />
       <Footer />
     </div>
   );
