@@ -27,12 +27,9 @@ form {
   color: #fff;
 }
 .movie {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 90%;
   align-items: center;
-}
-
-.img-container {
 }
 
 .movie p {
@@ -61,5 +58,10 @@ form {
 
   .movie-container {
     flex-direction: row;
+  }
+
+  .wrap {
+    position: relative;
+    bottom: 100px;
   }
 }

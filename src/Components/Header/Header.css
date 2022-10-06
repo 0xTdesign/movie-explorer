@@ -21,7 +21,7 @@ header {
 
 nav {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 15px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -59,6 +59,9 @@ button {
   display: block;
   margin-top: 10px;
   font-size: 0.8rem;
+  background-color: #fff;
+  color: #333;
+  padding: 5px;
 }
 form {
   margin-left: 6px;
@@ -67,7 +70,12 @@ form {
 }
 form input {
   padding: 0;
-  width: 110px;
+  width: 100px;
+}
+
+.logo-movie {
+  width: 30%;
+  margin-left: 25px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -123,6 +131,6 @@ form input {
 
   form input {
     padding: 0;
-    width: 100%;
+    width: 85%;
   }
 }
